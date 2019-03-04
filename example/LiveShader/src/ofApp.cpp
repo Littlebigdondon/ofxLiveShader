@@ -3,12 +3,16 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     fileWatcher = new ShaderFileWatcher("/Users/Donnie/Documents/OpenFrameworks/of_v0.10.1_osx_release/addons/ofxLiveShader/example/LiveShader/bin/data",
-                                     "",
-                                     "shader.frag");
+                                        "",
+                                        "shader.frag");
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    std::stringstream strm;
+    strm << "fps: " << ofGetFrameRate();
+    ofSetWindowTitle(strm.str());
+    
     if (fileWatcher->checkForUpdate()) {
         shader.load("", "shader.frag");
     }

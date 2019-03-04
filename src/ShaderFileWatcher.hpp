@@ -19,41 +19,34 @@
 using namespace std;
 using namespace folly;
 using namespace watchman;
-//using Callback = function<void(Try<dynamic>&&)>;
-//using ErrorCallback = function<void(const exception_wrapper&)>;
+
 
 class ShaderFileWatcher {
 public:
     string shaderPath = "";
-    string vertexShader = "";
-    string fragmentShader = "";
+    string vertexShader;
+    string fragmentShader;
     
     ShaderFileWatcher(string shaderPath,
-                      string vertexShader = "",
-                      string fragmentShader = "");
+                      string vertexShader = "*.vert",
+                      string fragmentShader = "*.frag");
     ~ShaderFileWatcher();
     
     bool checkForUpdate();
     
 private:
     string subscriptionName = "ShaderFileWatcher";
+//    dynamic query = dynamic::object("fields", dynamic::array("name"))(
+//                      "expression",
+//                      dynamic::array("name",
+//                                     dynamic::array(this->vertexShader, this->fragmentShader)));
     dynamic query = dynamic::object("fields", dynamic::array("name"))(
-                      "expression",
-                      dynamic::array("name",
-                                     dynamic::array(this->vertexShader, this->fragmentShader)));
+                                      "expression",
+                                          dynamic::array("anyof",
+                                             dynamic::array("match", this->vertexShader),
+                                             dynamic::array("match", this->fragmentShader)));
     shared_ptr<WatchmanClient> client;
     shared_ptr<EventBaseThread> eventBaseThread;
-    Future<Unit> subscription;
-    SubscriptionCallback callback =
-        SubscriptionCallback([this](Try<dynamic>&& data){
-            if (data.hasValue()) {
-                std::unique_lock<std::mutex> lock(mutex);
-                this->update_available = true;
-            } else {
-                std::cout << "subscribe() failed with: " << data.exception() << std::endl;
-            }
-        });
-    
     const ErrorCallback errorCallback =
         ErrorCallback([](const exception_wrapper& ex) {
                    cerr << "Failed: " << ex.what() << endl;;

@@ -32,25 +32,27 @@ ShaderFileWatcher::ShaderFileWatcher(string shaderPath,
                                                         nullptr,
                                                         this->errorCallback);
         // Connect to watchman server
-        this->client->connect().then([&, this](dynamic&& response) {
-            std::cout << "Connected to Watchman: " << response["version"] << std::endl;
-            // Watch shader directory
-            return this->client->watch(shaderPath).then([&, this](WatchPathPtr watch) {
-                // Subscribe to notifications on changes to files within the directory
-                return this->client->subscribe(this->query,
-                                               watch,
-                                               eventBase,
-                                               [this](Try<dynamic>&& data){
-                                                   if (data.hasValue()) {
-                                                       // Raise flag
-                                                       std::unique_lock<std::mutex> lock(mutex);
-                                                       this->update_available = true;
-                                                   } else {
-                                                       std::cout << "subscribe() failed with: " << data.exception() << std::endl;
-                                                   }
-                                               });
-            });
-        }).wait();
+        this->client->connect().wait();
+        std::cout << "Connected to Watchman: " << std::endl;
+        
+        // Watch shader directory
+        this->client->watch(shaderPath).then([&, this](WatchPathPtr watch) {
+            std::cout << "Watching: " << &watch << endl;
+            // Subscribe to notifications on changes to files within the directory
+            return this->client->subscribe(this->query,
+                                           watch,
+                                           eventBase,
+                                           [this](Try<dynamic>&& data){
+                                               if (data.hasValue()) {
+                                                   // Raise flag
+                                                   std::unique_lock<std::mutex> lock(this->mutex);
+                                                   this->update_available = true;
+                                               } else {
+                                                   std::cout << "subscribe() failed with: " << data.exception() << std::endl;
+                                               }
+                                           }).value();
+        })
+        .wait();
 }
 
 ShaderFileWatcher::~ShaderFileWatcher() {
@@ -62,7 +64,7 @@ bool ShaderFileWatcher::checkForUpdate() {
     auto update = false;
     if (this->update_available) {
         update = true;
-        std::unique_lock<std::mutex> lock(mutex);
+        std::unique_lock<std::mutex> lock(this->mutex);
         this->update_available = false;
     }
     return update;

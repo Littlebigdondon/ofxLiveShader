@@ -23,23 +23,21 @@ using namespace watchman;
 
 class ShaderFileWatcher {
 public:
-    string shaderPath = "";
+    string shaderPath;
     string vertexShader;
     string fragmentShader;
+    string executablesPath;
     
-    ShaderFileWatcher(string shaderPath,
+    ShaderFileWatcher(string shaderPath = std::filesystem::current_path().string() + "/../../../data",
                       string vertexShader = "*.vert",
-                      string fragmentShader = "*.frag");
+                      string fragmentShader = "*.frag",
+                      string executablesPath = "/usr/local/bin/");
     ~ShaderFileWatcher();
     
     bool checkForUpdate();
     
 private:
     string subscriptionName = "ShaderFileWatcher";
-//    dynamic query = dynamic::object("fields", dynamic::array("name"))(
-//                      "expression",
-//                      dynamic::array("name",
-//                                     dynamic::array(this->vertexShader, this->fragmentShader)));
     dynamic query = dynamic::object("fields", dynamic::array("name"))(
                                       "expression",
                                           dynamic::array("anyof",
@@ -53,7 +51,7 @@ private:
                 });
     
     std::mutex mutex;
-    std::atomic_bool update_available = false;
+    std::atomic_bool update_available;
 };
 
 #endif /* ShaderFileWatcher_hpp */

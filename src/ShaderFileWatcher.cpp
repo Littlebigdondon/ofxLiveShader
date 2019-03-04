@@ -12,10 +12,12 @@ using namespace watchman;
 
 ShaderFileWatcher::ShaderFileWatcher(string shaderPath,
                                      string vertexShader,
-                                     string fragmentShader):
+                                     string fragmentShader,
+                                     string executablesPath):
     shaderPath(shaderPath),
     vertexShader(vertexShader),
-    fragmentShader(fragmentShader) {
+    fragmentShader(fragmentShader),
+    executablesPath(executablesPath) {
         
         this->eventBaseThread = std::make_shared<folly::EventBaseThread>();
         folly::EventBase* eventBase = this->eventBaseThread->getEventBase();
@@ -23,7 +25,6 @@ ShaderFileWatcher::ShaderFileWatcher(string shaderPath,
         // Add the Watchman executable path to Xcode's $PATH env variable
         // (Sadly, $PATH from here does not match our system's $PATH)
         string currPATH = getenv("PATH");
-        string executablesPath = "/usr/local/bin/";
         setenv("PATH", (currPATH + ":" + executablesPath).c_str(), 1);
         
         // Create Watchman client
@@ -32,12 +33,16 @@ ShaderFileWatcher::ShaderFileWatcher(string shaderPath,
                                                         nullptr,
                                                         this->errorCallback);
         // Connect to watchman server
-        this->client->connect().wait();
-        std::cout << "Connected to Watchman: " << std::endl;
+        auto version = this->client->connect()
+        .wait()
+        .value()["version"];
+        
+        std::cout << "Connected to Watchman: " << version << std::endl;
         
         // Watch shader directory
-        this->client->watch(shaderPath).then([&, this](WatchPathPtr watch) {
-            std::cout << "Watching: " << &watch << endl;
+        this->client->watch(shaderPath)
+        .then([&, this](WatchPathPtr watch) {
+            std::cout << "Watching: " << shaderPath << std::endl;
             // Subscribe to notifications on changes to files within the directory
             return this->client->subscribe(this->query,
                                            watch,

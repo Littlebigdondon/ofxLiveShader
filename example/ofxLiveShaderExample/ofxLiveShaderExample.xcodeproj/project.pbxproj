@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E7DB71643CFBA425F40E22 /* ShaderFileWatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 360308DCE97DFE38F766BC97 /* ShaderFileWatcher.cpp */; };
+		1F6654C6B8F7FBF972FB0216 /* WatchmanClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F481C939B3BB3B1CBBEB47C /* WatchmanClient.cpp */; };
+		C90F7BA7A2F761844057C264 /* WatchmanResponseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E11C6A7AFE9A365A4938C058 /* WatchmanResponseError.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
-		F80BCA572229E147009357CF /* WatchmanClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F80BCA562229E147009357CF /* WatchmanClient.cpp */; };
-		F80BCA602229E1E3009357CF /* WatchmanResponseError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F80BCA5B2229E1E2009357CF /* WatchmanResponseError.cpp */; };
-		F80BCA612229E1E3009357CF /* WatchmanConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F80BCA5D2229E1E2009357CF /* WatchmanConnection.cpp */; };
-		F80BCA6C222A2177009357CF /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F80BCA6B222A2177009357CF /* libglog.0.dylib */; };
-		F80BCA6E222A21B1009357CF /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80BCA6D222A21B1009357CF /* libssl.a */; };
-		F80BCA78222A248E009357CF /* ShaderFileWatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F80BCA76222A248E009357CF /* ShaderFileWatcher.cpp */; };
-		F83E37DC222C1CCB004B9CBA /* libfolly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F83E37DB222C1CCB004B9CBA /* libfolly.a */; };
-		F83E37E0222C1D32004B9CBA /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F83E37DF222C1D32004B9CBA /* libevent.a */; };
+		F8E9F01C222DB19100EDEF4F /* libfolly.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E9F01B222DB19100EDEF4F /* libfolly.dylib */; };
+		F8E9F01E222DB1A200EDEF4F /* libevent-2.1.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E9F01D222DB1A200EDEF4F /* libevent-2.1.6.dylib */; };
+		F8E9F020222DB1AE00EDEF4F /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E9F01F222DB1AE00EDEF4F /* libglog.0.dylib */; };
+		F8E9F022222DB1C200EDEF4F /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E9F021222DB1C200EDEF4F /* libssl.1.0.0.dylib */; };
+		F9E779D91BACBEB841A4C5B1 /* WatchmanConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFDE73A07AA0B78CBBC2292B /* WatchmanConnection.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +32,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		360308DCE97DFE38F766BC97 /* ShaderFileWatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderFileWatcher.cpp; path = ../../../../addons/ofxLiveShader/src/ShaderFileWatcher.cpp; sourceTree = SOURCE_ROOT; };
+		36C166155E3D932881ADED06 /* ShaderFileWatcher.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderFileWatcher.hpp; path = ../../../../addons/ofxLiveShader/src/ShaderFileWatcher.hpp; sourceTree = SOURCE_ROOT; };
+		5F002C124AB57814D622EDC4 /* WatchmanConnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WatchmanConnection.h; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanConnection.h; sourceTree = SOURCE_ROOT; };
+		9F481C939B3BB3B1CBBEB47C /* WatchmanClient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WatchmanClient.cpp; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanClient.cpp; sourceTree = SOURCE_ROOT; };
+		A8B36D31FE6245FE7478F286 /* WatchmanClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WatchmanClient.h; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanClient.h; sourceTree = SOURCE_ROOT; };
+		DFDE73A07AA0B78CBBC2292B /* WatchmanConnection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WatchmanConnection.cpp; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanConnection.cpp; sourceTree = SOURCE_ROOT; };
+		E11C6A7AFE9A365A4938C058 /* WatchmanResponseError.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WatchmanResponseError.cpp; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanResponseError.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../../../libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -207,21 +214,17 @@
 		E42963712163EDD300A6A9E2 /* ofFmodSoundPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofFmodSoundPlayer.h; path = ../../../../libs/openFrameworks/sound/ofFmodSoundPlayer.h; sourceTree = SOURCE_ROOT; };
 		E42963722163EDD300A6A9E2 /* ofSoundBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofSoundBuffer.cpp; path = ../../../../libs/openFrameworks/sound/ofSoundBuffer.cpp; sourceTree = SOURCE_ROOT; };
 		E42963732163EDD300A6A9E2 /* ofSoundBaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofSoundBaseTypes.h; path = ../../../../libs/openFrameworks/sound/ofSoundBaseTypes.h; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* LiveShaderDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveShaderDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* ofxLiveShaderExampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofxLiveShaderExampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		F80BCA562229E147009357CF /* WatchmanClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WatchmanClient.cpp; path = ../../libs/watchman/WatchmanClient.cpp; sourceTree = "<group>"; };
-		F80BCA5B2229E1E2009357CF /* WatchmanResponseError.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WatchmanResponseError.cpp; path = ../../libs/watchman/WatchmanResponseError.cpp; sourceTree = "<group>"; };
-		F80BCA5D2229E1E2009357CF /* WatchmanConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WatchmanConnection.cpp; path = ../../libs/watchman/WatchmanConnection.cpp; sourceTree = "<group>"; };
-		F80BCA6B222A2177009357CF /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = ../../../../../../../../../usr/local/Cellar/glog/0.3.5_3/lib/libglog.0.dylib; sourceTree = "<group>"; };
-		F80BCA6D222A21B1009357CF /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../../../../../../usr/local/Cellar/openssl/1.0.2q/lib/libssl.a; sourceTree = "<group>"; };
-		F80BCA76222A248E009357CF /* ShaderFileWatcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderFileWatcher.cpp; sourceTree = "<group>"; };
-		F80BCA77222A248E009357CF /* ShaderFileWatcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderFileWatcher.hpp; sourceTree = "<group>"; };
-		F83E37DB222C1CCB004B9CBA /* libfolly.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfolly.a; path = ../../../../../../../../../usr/local/Cellar/folly/2018.09.24.00_2/lib/libfolly.a; sourceTree = "<group>"; };
-		F83E37DF222C1D32004B9CBA /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../../../../../../../../../usr/local/Cellar/libevent/2.1.8/lib/libevent.a; sourceTree = "<group>"; };
+		F8E9F01B222DB19100EDEF4F /* libfolly.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfolly.dylib; path = ../../../../../../../../../usr/local/Cellar/folly/2018.09.24.00_2/lib/libfolly.dylib; sourceTree = "<group>"; };
+		F8E9F01D222DB1A200EDEF4F /* libevent-2.1.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libevent-2.1.6.dylib"; path = "../../../../../../../../../usr/local/Cellar/libevent/2.1.8/lib/libevent-2.1.6.dylib"; sourceTree = "<group>"; };
+		F8E9F01F222DB1AE00EDEF4F /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = ../../../../../../../../../usr/local/Cellar/glog/0.3.5_3/lib/libglog.0.dylib; sourceTree = "<group>"; };
+		F8E9F021222DB1C200EDEF4F /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ../../../../../../../../../usr/local/Cellar/openssl/1.0.2q/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		F8E9F025222DBD1D00EDEF4F /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,16 +232,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F83E37E0222C1D32004B9CBA /* libevent.a in Frameworks */,
-				F83E37DC222C1CCB004B9CBA /* libfolly.a in Frameworks */,
-				F80BCA6E222A21B1009357CF /* libssl.a in Frameworks */,
-				F80BCA6C222A2177009357CF /* libglog.0.dylib in Frameworks */,
+				F8E9F022222DB1C200EDEF4F /* libssl.1.0.0.dylib in Frameworks */,
+				F8E9F020222DB1AE00EDEF4F /* libglog.0.dylib in Frameworks */,
+				F8E9F01E222DB1A200EDEF4F /* libevent-2.1.6.dylib in Frameworks */,
+				F8E9F01C222DB19100EDEF4F /* libfolly.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DBDD9BD611548E79A021891 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				360308DCE97DFE38F766BC97 /* ShaderFileWatcher.cpp */,
+				36C166155E3D932881ADED06 /* ShaderFileWatcher.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		124F2BA3D8E278C1CB5C7B4D /* ofxLiveShader */ = {
+			isa = PBXGroup;
+			children = (
+				91354399DA4B77EF75C52983 /* libs */,
+				0DBDD9BD611548E79A021891 /* src */,
+			);
+			name = ofxLiveShader;
+			sourceTree = "<group>";
+		};
+		635A19C5E839C96A477831B5 /* watchman */ = {
+			isa = PBXGroup;
+			children = (
+				9F481C939B3BB3B1CBBEB47C /* WatchmanClient.cpp */,
+				A8B36D31FE6245FE7478F286 /* WatchmanClient.h */,
+				DFDE73A07AA0B78CBBC2292B /* WatchmanConnection.cpp */,
+				5F002C124AB57814D622EDC4 /* WatchmanConnection.h */,
+				E11C6A7AFE9A365A4938C058 /* WatchmanResponseError.cpp */,
+			);
+			name = watchman;
+			sourceTree = "<group>";
+		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,9 +279,18 @@
 			name = local_addons;
 			sourceTree = "<group>";
 		};
+		91354399DA4B77EF75C52983 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				635A19C5E839C96A477831B5 /* watchman */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				124F2BA3D8E278C1CB5C7B4D /* ofxLiveShader */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -538,15 +580,15 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				F80BCA672229E284009357CF /* ofxLiveShader */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				F8E9F023222DBCC800EDEF4F /* data */,
 				E42962AA2163EDD300A6A9E2 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				6948EE371B920CB800B5AC1A /* local_addons */,
-				E4B69B5B0A3A1756003C02F2 /* LiveShaderDebug.app */,
-				F80BCA6A222A2177009357CF /* Frameworks */,
+				E4B69B5B0A3A1756003C02F2 /* ofxLiveShaderExampleDebug.app */,
+				F8E9F01A222DB19000EDEF4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -560,60 +602,32 @@
 			path = src;
 			sourceTree = SOURCE_ROOT;
 		};
-		F80BCA652229E24A009357CF /* watchman */ = {
+		F8E9F01A222DB19000EDEF4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F80BCA562229E147009357CF /* WatchmanClient.cpp */,
-				F80BCA5D2229E1E2009357CF /* WatchmanConnection.cpp */,
-				F80BCA5B2229E1E2009357CF /* WatchmanResponseError.cpp */,
-			);
-			path = watchman;
-			sourceTree = "<group>";
-		};
-		F80BCA672229E284009357CF /* ofxLiveShader */ = {
-			isa = PBXGroup;
-			children = (
-				F80BCA692229E2D0009357CF /* libs */,
-				F80BCA682229E292009357CF /* src */,
-			);
-			name = ofxLiveShader;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		F80BCA682229E292009357CF /* src */ = {
-			isa = PBXGroup;
-			children = (
-				F80BCA76222A248E009357CF /* ShaderFileWatcher.cpp */,
-				F80BCA77222A248E009357CF /* ShaderFileWatcher.hpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		F80BCA692229E2D0009357CF /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				F80BCA652229E24A009357CF /* watchman */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		F80BCA6A222A2177009357CF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F83E37DF222C1D32004B9CBA /* libevent.a */,
-				F83E37DB222C1CCB004B9CBA /* libfolly.a */,
-				F80BCA6D222A21B1009357CF /* libssl.a */,
-				F80BCA6B222A2177009357CF /* libglog.0.dylib */,
+				F8E9F021222DB1C200EDEF4F /* libssl.1.0.0.dylib */,
+				F8E9F01F222DB1AE00EDEF4F /* libglog.0.dylib */,
+				F8E9F01D222DB1A200EDEF4F /* libevent-2.1.6.dylib */,
+				F8E9F01B222DB19100EDEF4F /* libfolly.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E9F023222DBCC800EDEF4F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F8E9F025222DBD1D00EDEF4F /* shader.frag */,
+			);
+			name = data;
+			path = bin/data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* LiveShader */ = {
+		E4B69B5A0A3A1756003C02F2 /* ofxLiveShaderExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "LiveShader" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxLiveShaderExample" */;
 			buildPhases = (
 				E42962A92163ECCD00A6A9E2 /* ShellScript */,
 				E4B69B580A3A1756003C02F2 /* Sources */,
@@ -626,9 +640,9 @@
 			);
 			dependencies = (
 			);
-			name = LiveShader;
+			name = ofxLiveShaderExample;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* LiveShaderDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* ofxLiveShaderExampleDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -639,7 +653,7 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "LiveShader" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxLiveShaderExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -654,7 +668,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* LiveShader */,
+				E4B69B5A0A3A1756003C02F2 /* ofxLiveShaderExample */,
 			);
 		};
 /* End PBXProject section */
@@ -684,7 +698,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"\n";
+			shellScript = "xcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"";
 		};
 		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -706,12 +720,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F80BCA602229E1E3009357CF /* WatchmanResponseError.cpp in Sources */,
-				F80BCA572229E147009357CF /* WatchmanClient.cpp in Sources */,
-				F80BCA612229E1E3009357CF /* WatchmanConnection.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				F80BCA78222A248E009357CF /* ShaderFileWatcher.cpp in Sources */,
+				1F6654C6B8F7FBF972FB0216 /* WatchmanClient.cpp in Sources */,
+				F9E779D91BACBEB841A4C5B1 /* WatchmanConnection.cpp in Sources */,
+				C90F7BA7A2F761844057C264 /* WatchmanResponseError.cpp in Sources */,
+				09E7DB71643CFBA425F40E22 /* ShaderFileWatcher.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +736,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -740,28 +753,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/boost",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_LIBS)",
-					"$(OF_CORE_FRAMEWORKS)",
 				);
 				SDKROOT = macosx;
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 			};
 			name = AppStore;
 		};
@@ -769,18 +773,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "APPSTORE=1";
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
+					/usr/local/include,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -788,19 +793,16 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/glog/0.3.5_3/lib,
-					/usr/local/Cellar/openssl/1.0.2q/lib,
 					/usr/local/Cellar/folly/2018.09.24.00_2/lib,
 					/usr/local/Cellar/libevent/2.1.8/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/openssl/1.0.2q/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
+					"-I/usr/local/opt/openssl/include\n-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
@@ -808,8 +810,6 @@
 					"$(LIB_OF)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 				WRAPPER_EXTENSION = app;
 				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
 			};
@@ -819,7 +819,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -835,30 +834,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/boost",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_LIBS)",
-					"$(OF_CORE_FRAMEWORKS)",
-					/usr/local/Cellar/libevent/2.1.8/lib/libevent.a,
 				);
 				SDKROOT = macosx;
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 			};
 			name = Debug;
 		};
@@ -866,7 +855,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -883,29 +871,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/boost",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_LIBS)",
-					"$(OF_CORE_FRAMEWORKS)",
-					/usr/local/Cellar/libevent/2.1.8/lib/libevent.a,
 				);
 				SDKROOT = macosx;
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 			};
 			name = Release;
 		};
@@ -913,18 +891,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
+					/usr/local/include,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -932,19 +911,16 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/glog/0.3.5_3/lib,
-					/usr/local/Cellar/openssl/1.0.2q/lib,
 					/usr/local/Cellar/folly/2018.09.24.00_2/lib,
 					/usr/local/Cellar/libevent/2.1.8/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/openssl/1.0.2q/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
+					"-I/usr/local/opt/openssl/include\n-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
@@ -952,8 +928,6 @@
 					"$(LIB_OF_DEBUG)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -962,17 +936,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				HEADER_BOOST = "\"$(OF_PATH)/libs/boost/include\"";
 				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../../addons/ofxLiveShader/libs,
+					../../../../addons/ofxLiveShader/libs/watchman,
+					../../../../addons/ofxLiveShader/src,
+					/usr/local/include,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -980,19 +955,16 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/glog/0.3.5_3/lib,
-					/usr/local/Cellar/openssl/1.0.2q/lib,
 					/usr/local/Cellar/folly/2018.09.24.00_2/lib,
 					/usr/local/Cellar/libevent/2.1.8/lib,
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					/usr/local/Cellar/openssl/1.0.2q/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
-					"-I/usr/local/opt/openssl/include",
-					"-DBOOST_DIR=/usr/local/include/",
-					"-DBOOST_NO_AUTO_PTR",
-					"-std=c++1z",
+					"-I/usr/local/opt/openssl/include\n-std=c++1z",
 				);
 				OTHER_LDFLAGS = (
 					"$(OF_CORE_LIBS)",
@@ -1000,8 +972,6 @@
 					"$(LIB_OF)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYSTEM_HEADER_SEARCH_PATHS = "";
-				USER_HEADER_SEARCH_PATHS = "./local_addons/**";
 				WRAPPER_EXTENSION = app;
 				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
 			};
@@ -1010,7 +980,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "LiveShader" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxLiveShaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -1020,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "LiveShader" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxLiveShaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

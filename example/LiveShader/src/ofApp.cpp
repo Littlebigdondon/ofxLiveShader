@@ -2,17 +2,29 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    fileWatcher = new ShaderFileWatcher("/Users/Donnie/Documents/OpenFrameworks/of_v0.10.1_osx_release/addons/ofxLiveShader/example/LiveShader/bin/data",
+                                     "",
+                                     "shader.frag");
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    if (fileWatcher->checkForUpdate()) {
+        shader.load("", "shader.frag");
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+//    if (file)
+    int windowWidth = ofGetWindowWidth();
+    int windowHeight = ofGetWindowHeight();
+    
+    shader.begin();
+    shader.setUniform2f("iResolution", windowWidth, windowHeight);
+    shader.setUniform1f("iTime", ofGetElapsedTimef());
+    ofDrawPlane(windowWidth/2, windowHeight/2, windowWidth, windowHeight);
+    shader.end();
 }
 
 //--------------------------------------------------------------

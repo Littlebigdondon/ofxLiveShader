@@ -5,8 +5,8 @@
 //  Created by Donnie Pitts on 3/1/19.
 //
 
-#ifndef ShaderFileWatcher_hpp
-#define ShaderFileWatcher_hpp
+#ifndef ShaderFileWatcher_h
+#define ShaderFileWatcher_h
 
 #include "WatchmanClient.h"
 #include "ofMain.h"
@@ -54,4 +54,4 @@ private:
     std::atomic_bool update_available;
 };
 
-#endif /* ShaderFileWatcher_hpp */
+#endif /* ShaderFileWatcher_h */

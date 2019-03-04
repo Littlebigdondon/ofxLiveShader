@@ -5,7 +5,7 @@
 //  Created by Donnie Pitts on 3/1/19.
 //
 
-#include "ShaderFileWatcher.hpp"
+#include "ShaderFileWatcher.h"
 
 using namespace folly;
 using namespace watchman;

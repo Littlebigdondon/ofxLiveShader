@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		360308DCE97DFE38F766BC97 /* ShaderFileWatcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderFileWatcher.cpp; path = ../../../../addons/ofxLiveShader/src/ShaderFileWatcher.cpp; sourceTree = SOURCE_ROOT; };
-		36C166155E3D932881ADED06 /* ShaderFileWatcher.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderFileWatcher.hpp; path = ../../../../addons/ofxLiveShader/src/ShaderFileWatcher.hpp; sourceTree = SOURCE_ROOT; };
+		36C166155E3D932881ADED06 /* ShaderFileWatcher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderFileWatcher.h; path = ../../src/ShaderFileWatcher.h; sourceTree = SOURCE_ROOT; };
 		5F002C124AB57814D622EDC4 /* WatchmanConnection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WatchmanConnection.h; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanConnection.h; sourceTree = SOURCE_ROOT; };
 		9F481C939B3BB3B1CBBEB47C /* WatchmanClient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WatchmanClient.cpp; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanClient.cpp; sourceTree = SOURCE_ROOT; };
 		A8B36D31FE6245FE7478F286 /* WatchmanClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WatchmanClient.h; path = ../../../../addons/ofxLiveShader/libs/watchman/WatchmanClient.h; sourceTree = SOURCE_ROOT; };
@@ -246,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				360308DCE97DFE38F766BC97 /* ShaderFileWatcher.cpp */,
-				36C166155E3D932881ADED06 /* ShaderFileWatcher.hpp */,
+				36C166155E3D932881ADED06 /* ShaderFileWatcher.h */,
 			);
 			name = src;
 			sourceTree = "<group>";

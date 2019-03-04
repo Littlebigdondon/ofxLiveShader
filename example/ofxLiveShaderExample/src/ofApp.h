@@ -3,7 +3,7 @@
 #include "ofMain.h"
 
 // !!__NECESSARY__!!
-#include "ShaderFileWatcher.hpp"
+#include "ShaderFileWatcher.h"
 
 class ofApp : public ofBaseApp{
 

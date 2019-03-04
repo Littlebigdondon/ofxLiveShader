@@ -1,6 +1,6 @@
 # **ofxLiveShader**
 
-An openFrameworks addon for hot-reloading shader files on the fly. Utilizes Facebook’s Watchman service to monitor filesystem changes. Tested on macOS, but as long as you can build the dependencies, it should work on your platform. 
+An openFrameworks addon for hot-reloading shader files on the fly. Utilizes Facebook’s Watchman service to monitor filesystem changes. Tested on macOS, but as long as you can build the <a href="#install-dependencies">dependencies</a>, it should work on your platform. 
 
 
 #### PREREQUISITE NOTES:  

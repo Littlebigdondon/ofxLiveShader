@@ -59,9 +59,10 @@ _**NOTE**: This next step may not be necessary based on your project/dependency 
     ```c++
     int main(int argc, char** argv) {…}
     ```
-    and immediately passing these to `folly::init()`
+    and immediately passing these to `folly::init()`. I'm going to only pass the first argument because of [this](https://stackoverflow.com/questions/46103109/xcode-and-python-error-unrecognized-arguments-nsdocumentrevisionsdebugmode).
     ```c++
     int main(int argc, char** argv) {
+      argc = 0;
       folly::init(&argc, &argv);
       ...
     }

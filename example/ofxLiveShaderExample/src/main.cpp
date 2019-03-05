@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     // NOTE: I really don't want to have to do this...I'm not sure of any
     //   simpler way to capture these necessary args & start Folly. :(
     //   Ideally this would be done inside the ShaderFileWatcher class.
-    argc = 0;
+    argc = 1;
     folly::init(&argc, &argv);
     
 	// this kicks off the running of my app
